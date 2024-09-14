@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Login and Registration</title>
+    </head>
+    <body>
+        <div class="container">
+            <button id="openDialogBtn">Բացեք մուտքի էջը</button>
+            <div id="loginDialog" class="dialog">
+                <span class="close" onclick="closeDialog()">&times;</span>
+                <h2>Մուտք</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Օգտագործողի անունը</label>
+                    <input type="text" id="loginUsername" name="loginUsername"
+                        required>
+                    <label for="loginPassword">Գաղտնաբառ</label>
+                    <input type="password" id="loginPassword"
+                        name="loginPassword" required>
+                    <button type="submit">Մուտք</button>
+                </form>
+            </div>
+            <div id="registrationDialog" class="dialog">
+                <span class="close" onclick="closeDialog()">&times;</span>
+                <h2>Գրանցում</h2>
+                <form id="registrationForm">
+                    <label for="regUsername">Օգտագործողի անունը</label>
+                    <input type="text" id="regUsername" name="regUsername"
+                        required>
+                    <label for="regPassword">Գաղտնաբառ</label>
+                    <input type="password" id="regPassword" name="regPassword"
+                        required>
+                    <button type="submit">Գրանցվել</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
